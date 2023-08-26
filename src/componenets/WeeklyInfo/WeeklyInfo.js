@@ -82,7 +82,7 @@ const WeeklyInfo = ({forecastData, currentWeather}) => {
             ):(
               <>
               <View style={{height:'50%'}}>
-                 <Text>
+                 <Text  style={{padding:20,alignSelf:'center', marginTop:50}}>
                       no weather data 
                  </Text>
               </View>
@@ -122,7 +122,7 @@ const WeeklyInfo = ({forecastData, currentWeather}) => {
                 </View>
               ))
             ):(<>
-              <View><Text>not data</Text></View>
+              <View><Text style={{padding:20, alignSelf:'center', marginTop:50}}> no weather data </Text></View>
             </>)
           }
         

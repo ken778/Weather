@@ -9,9 +9,7 @@ import {
   View,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import Bookmark from './screens/Favorite';
 import Landing from './screens/Landing';
 import Home from './screens/Home';
@@ -25,8 +23,10 @@ import Details from './screens/Details';
 function App() {
 
   useEffect(()=>{
-    if(Platform.OS === 'android')
-    SplashScreen.hide();
+    if(Platform.OS === 'android'){
+      SplashScreen.hide();
+    }
+  
   },[])
        return(
         <>
