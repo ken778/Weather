@@ -36,7 +36,7 @@ const Home = () => {
     `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${key}&units=metric`,
   );
 
-  console.log('data from home', forecastData);
+  // console.log('data from home', errorMessage.message);
 
   return (
     <>
