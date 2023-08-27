@@ -26,8 +26,8 @@ const Map = ({route}) => {
                     <Marker
                     draggable
                     coordinate={{
-                        latitude:-26.0815,
-                        longitude:28.0867,
+                        latitude:latitude,
+                        longitude:longitude,
                     }}
                     title={locationName}
                     description={main}
