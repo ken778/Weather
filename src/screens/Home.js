@@ -9,8 +9,8 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
 const Home = () => {
-  const [lat, setLat] = useState(-26.081545);
-  const [long, setLong] = useState(28.086737);
+  const [lat, setLat] = useState(-26.042517);
+  const [long, setLong] = useState(28.201193);
   const key = 'd5762ba56acf2d29530dba0d45471ed9';
 
  
