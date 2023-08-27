@@ -19,7 +19,7 @@ import Details from './screens/Details';
 
 
 // const Tab = createBottomTabNavigator();
- const Stack = createNativeStackNavigator();
+ const Stack = createNativeStackNavigator()
 function App() {
 
   useEffect(()=>{

@@ -5,20 +5,21 @@ const useFetch = (url) => {
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
 
+  //show alert when there is no connection
   const createTwoButtonAlert = () =>
-  Alert.alert('Alert Title', 'My Alert Msg', [
-    {
-      text: 'Cancel',
-      onPress: () => console.log('Cancel Pressed'),
-      style: 'cancel',
-    },
-    {text: 'OK', onPress: () => console.log('OK Pressed')},
+  Alert.alert('Connection Problem', 'Please check your internet connection', [
+ 
+    {text: 'OK'},
   ]);
+
+
   useEffect(() => {
+    createTwoButtonAlert()
     fetch(url)
       .then(response => {
         if (!response.ok) {
           throw Error('Could not fetch weather info');
+          
         }
         return response.json();
       })
@@ -30,6 +31,7 @@ const useFetch = (url) => {
       })
       .catch(error => {
         console.error('Error fetching data:', error);
+        console.log('Error fetching data:', error);
         createTwoButtonAlert()
         setIsPending(false);
         setError(error);
