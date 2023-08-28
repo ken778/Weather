@@ -1,3 +1,4 @@
+ Development
 # React-native Weather App
 
 # Tech Used
@@ -29,3 +30,10 @@ npm run android
 
 
 If everything is set up _correctly_, you should see your the app running in your _Android Emulator shortly provided you have set up your emulator/simulator correctly.
+=======
+react-native-weather-app
+Tech Used
+React Native, Expo, Styled-Components
+
+The UI
+ main
