@@ -13,11 +13,8 @@ Step 1: <br>
 Step 2:
    - Head over to https://openweathermap.org/api/one-call-api to get an API key. (You will have to sign up)<br>
    - Head over to https://developers.google.com/maps/documentation/geocoding/overview to get a GEOCODING API key.<br>
-   - Create a .env file in the root folder and put your keys in the file like this:<br>
-   ```
-     API_KEY=YourOpenWeatherKeyHere
-     GOOGLE_KEY=YourGoogleKeyHere
-   ```
+ 
+
 Step 3: 
   - Download Android Studio  <br> 
 
