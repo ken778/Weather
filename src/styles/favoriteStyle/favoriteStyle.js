@@ -43,6 +43,9 @@ const favoriteStyle = StyleSheet.create({
         width:40,
         marginLeft:20,
         marginTop:-16
+    },
+    nodataTextStyle:{
+        padding:30
     }
 })
 export{favoriteStyle}

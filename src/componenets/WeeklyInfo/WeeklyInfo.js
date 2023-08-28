@@ -83,7 +83,7 @@ const WeeklyInfo = ({forecastData, currentWeather}) => {
               <>
               <View style={{height:'50%'}}>
                  <Text  style={{padding:20,alignSelf:'center', marginTop:50}}>
-                      no weather data 
+                      no weather data, Please Check your Internet connectin 
                  </Text>
               </View>
               </>
@@ -122,7 +122,7 @@ const WeeklyInfo = ({forecastData, currentWeather}) => {
                 </View>
               ))
             ):(<>
-              <View><Text style={{padding:20, alignSelf:'center', marginTop:50}}> no weather data </Text></View>
+              <View><Text style={{padding:20, alignSelf:'center', marginTop:50}}> no weather data, Please Check your Internet connectin </Text></View>
             </>)
           }
         
