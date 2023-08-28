@@ -1,5 +1,5 @@
 import {View, Text,ActivityIndicator} from 'react-native';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import useFetch from '../hooks/useFetch';
 import Geolocation from '@react-native-community/geolocation';
 import TempInfo from '../componenets/TempInfo/TempInfo';
@@ -9,8 +9,8 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
 const Home = () => {
-  const [lat, setLat] = useState(-26.042517);
-  const [long, setLong] = useState(28.201193);
+  const [lat, setLat] = useState();
+  const [long, setLong] = useState();
   const key = 'd5762ba56acf2d29530dba0d45471ed9';
 
  
@@ -22,10 +22,13 @@ const Home = () => {
   } = useFetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`,
   );
-  Geolocation.getCurrentPosition(data => {
-    //  setLat(data.coords.latitude)
-    //  setLong(data.coords.longitude)
-  });
+ 
+  useEffect(()=>{
+    Geolocation.getCurrentPosition(data => {
+      setLat(data.coords.latitude)
+      setLong(data.coords.longitude)
+   });
+  },[])
 
   //fetching weekly weather
   const {

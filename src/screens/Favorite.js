@@ -26,6 +26,7 @@ const Favorite = ({navigation}) => {
   useFocusEffect(
     React.useCallback(() => {
       getdata();
+     // AsyncStorage.clear()
     }, []),
   );
 
@@ -70,7 +71,7 @@ const Favorite = ({navigation}) => {
       ) : (
         <>
           <View>
-            <Text>there is no data</Text>
+            <Text style={favoriteStyle.nodataTextStyle}>There are favorite places saved yet, to save press the favorite icon in the home page</Text>
           </View>
         </>
       )}
